@@ -4,6 +4,7 @@ def main():
     speed = 186,000
     distance = 34,000,000
     time = distance/speed 
-    print(time)
+    print time 
+    print ("seconds")
     
 main()
