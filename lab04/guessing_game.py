@@ -4,11 +4,15 @@ def main():
     while guess != animal:
         print("I am thinking of an animal, can you guess it?")
         guess = input("What animal am I thinking of: ")
-        x = (guess)
+        x = x.lower(guess)
         if x == animal:
             print("Congratulations, you guessed correctly!")
             break
-        elif guess != animal:
-            print("Wrong, guess again.")
+        elif guess == "quit":
+            break
+        else:
+           print("Wrong, guess again.")
+        
+            
 
 main()
